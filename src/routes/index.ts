@@ -11,7 +11,7 @@ interface IUsuario {
 const usuarios: IUsuario[] = [];
 
 routes.get("/", (req: Request, res: Response) => {
-  res.json(usuarios);
+  return res.json(usuarios);
 });
 
 routes.post(
